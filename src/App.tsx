@@ -488,10 +488,20 @@ export default function App() {
         </div>
       </section>
 
-      {/* Education + Experience — mesma seção, fluxo contínuo */}
+      {/* Experience + Education — mesma seção, fluxo contínuo */}
       <section id="experiencia" className="py-16 bg-slate-50">
         <div className="section-container">
           <div className="max-w-3xl mx-auto space-y-12">
+
+            {/* Experiência */}
+            <div>
+              <h2 className="text-2xl md:text-4xl font-bold text-center mb-8">Experiência Profissional</h2>
+              <div className="space-y-3">
+                {portfolioData.experience.map((exp, idx) => (
+                  <AccordionItem key={idx} exp={exp} />
+                ))}
+              </div>
+            </div>
 
             {/* Formação */}
             <div>
@@ -502,16 +512,6 @@ export default function App() {
                 items={portfolioData.education}
                 languages={portfolioData.languages}
               />
-            </div>
-
-            {/* Experiência */}
-            <div>
-              <h2 className="text-2xl md:text-4xl font-bold text-center mb-8">Experiência Profissional</h2>
-              <div className="space-y-3">
-                {portfolioData.experience.map((exp, idx) => (
-                  <AccordionItem key={idx} exp={exp} />
-                ))}
-              </div>
             </div>
 
             {/* Diferenciais */}
