@@ -83,7 +83,7 @@ export const portfolioData = {
     }
   ],
   education: [
-    "Tecnólogo em Gestão Pública — UDF",
+    "Tecnólogo em Gestão Pública",
     "Gestão de Riscos em Processos de Trabalho",
     "Análise Ex Ante de Políticas Públicas",
     "Planejamento Estratégico para Organizações Públicas",
@@ -91,12 +91,12 @@ export const portfolioData = {
     "Introdução ao Orçamento Público",
     "Gestão Pessoal - Base da Liderança",
     "Segurança da Informação na Transformação Digital",
-    "Técnico em Informática — Claro Cursos",
-    "Web Designer — SENAI",
-    "Front-end — SENAI",
+    "Técnico em Informática",
+    "Web Designer",
+    "Front-end",
     "Python",
-    "Full Stack — SENAI",
-    "Soft Skills — SENAI"
+    "Full Stack",
+    "Soft Skills"
   ],
   languages: [
     { name: "Português", level: "Nativo" },
