@@ -399,7 +399,7 @@ export default function App() {
                     O NexusMarket vai além de um sistema de gestão, conta com um motor de IA baseado no Gemini, dividido em agentes especializados: suporte ao cliente, análise financeira e automação de cadastro de produtos, tornando a operação mais inteligente e autônoma.
                   </p>
                   <a
-                    href="https://wa.me/5561992826456"
+                    href="https://wa.me/5561992826456?text=Ol%C3%A1%21%20Vim%20atrav%C3%A9s%20do%20portf%C3%B3lio%20do%20David%20e%20gostaria%20de%20testar%20a%20demo%20do%20NexusMarket."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full py-4 bg-primary hover:bg-primary-dark text-white rounded-2xl font-bold transition-all flex items-center justify-center gap-2"
