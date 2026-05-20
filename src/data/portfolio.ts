@@ -1,58 +1,74 @@
 export const portfolioData = {
   name: "David M. Mota",
   title: "Full Stack Engineer | Founder do NexusMarket",
- subtitle: "Full Stack com olho de designer e foco em segurança: RBAC, Rate Limit, Auth e sistemas completos.",
+  subtitle: "Especialidade em segurança e escalabilidade: RBAC, multi-tenant, idempotência e sistemas SaaS completos.",
   about: [
-    "Desenvolvedor Full Stack com experiência em gestão pública e operações militares no Exército Brasileiro, onde atuei na automação de processos administrativos, gestão de dados e liderança operacional.",  
-    "Criador do NexusMarket, um SaaS para gestão de negócios físicos com ERP, PDV, CRM e Delivery integrados. O sistema conta com um motor de IA baseado no Gemini, dividido em agentes especializados: suporte ao cliente, análise financeira e automação de cadastro de produtos.", 
-    "Atuo do backend ao frontend, com foco em arquitetura escalável, segurança, experiência do usuário e soluções aplicadas ao mundo real."
+    "Desenvolvedor Full Stack com experiência em gestão pública e operações militares no Exército Brasileiro, onde atuei na automação de processos administrativos, gestão de dados e liderança operacional.",
+    "Criador do NexusMarket, uma plataforma SaaS Enterprise para gestão de negócios físicos com ERP, PDV, CRM e Delivery integrados. O sistema conta com um motor de IA baseado no Gemini, dividido em agentes especializados: suporte ao cliente, análise financeira e automação de cadastro de produtos.",
+    "Especialista em segurança e escalabilidade: construo sistemas com isolamento multi-tenant estrito, RBAC granular, operações idempotentes, rate limiting e auditoria completa — arquitetura pronta para crescer sem comprometer a integridade dos dados."
   ],
   mainProject: {
-    title: "NexusMarket ERP SaaS Completo",
-    description: "Projeto pessoal focado em resolver problemas reais de gestão operacional.",
+    title: "NexusMarket ERP SaaS Enterprise",
+    description: "Plataforma SaaS multi-tenant completa para gestão operacional de negócios físicos do PDV ao CRM, do controle de estoque ao módulo fiscal com NFe.",
     modules: [
-      "PDV com modo fullscreen",
-      "Gestão de produtos e estoque",
+      "PDV Retail com modo fullscreen imersivo",
+      "PDV Restaurante com gestão de mesas",
+      "Gestão de produtos e estoque em tempo real",
       "Módulo Food com regras ANVISA",
       "Produção e controle de lotes",
-      "CRM e automações",
-      "Delivery com rastreio"
+      "CRM com campanhas, créditos e eventos",
+      "Delivery com rastreio e integrações",
+      "Kitchen Display System (KDS)",
+      "Módulo Fiscal NFe (assinatura XML)",
+      "Suporte com IA (tickets inteligentes)",
+      "Multi-loja com isolamento total de tenants",
+      "Dashboard com analytics e relatórios"
     ],
     technicalHighlights: [
-      "Arquitetura multi-tenant",
-      "Sistema de permissões granulares (RBAC)",
-      "Modo Offline Lite com sincronização",
-      "Integração com APIs externas",
-      "Estrutura pronta para expansão futura"
+      "Arquitetura multi-tenant com isolamento estrito por storeId",
+      "RBAC com 8 roles granulares (GM, Admin, Caixa, Cozinha...)",
+      "Operações idempotentes com Idempotency-Key (pagamentos seguros)",
+      "Rate Limiting com Valkey/Redis contra abusos e DDoS",
+      "JWT em cookies HttpOnly + proteção reCAPTCHA v3",
+      "Fiscal NFe com assinatura criptográfica XML (xml-crypto)",
+      "CI/CD com GitHub Actions (lint → typecheck → test → build)",
+      "Motor de IA com agentes Gemini especializados por domínio",
+      "Serviço dedicado de impressão térmica USB (Node.js)",
+      "Audit Log completo de todas as operações críticas"
     ],
-    stack: ["Angular", "NestJS", "Prisma", "MySQL", "Docker"]
+    stack: ["Angular 20", "NestJS 11", "Prisma ORM", "MySQL 8", "Docker", "Valkey/Redis", "TypeScript 5.9", "Chart.js", "GitHub Actions"]
   },
   techStack: {
     backend: [
-      "NestJS",
+      "NestJS 11",
       "Prisma ORM",
-      "MySQL",
-      "Autenticação JWT",
-      "RBAC",
+      "MySQL 8",
+      "JWT + Cookies HttpOnly",
+      "RBAC Granular",
       "Multi-tenant"
     ],
     frontend: [
-      "Angular",
-      "SCSS estruturado",
-      "UX focado em operação",
-      "Dashboards",
-      "PDV"
+      "Angular 20",
+      "TailwindCSS",
+      "Chart.js",
+      "UX Operacional",
+      "PDV Imersivo",
+      "Dashboards"
     ],
     devops: [
-      "Docker",
-      "Gerenciamento de ambientes",
-      "Integrações com APIs externas"
+      "Docker & Docker Compose",
+      "Nginx Reverse Proxy",
+      "GitHub Actions CI/CD",
+      "Valkey/Redis",
+      "Health Checks"
     ],
-    business: [
-      "Arquitetura SaaS",
-      "Modelos de monetização",
-      "Experiência operacional",
-      "Estratégia de produto"
+    security: [
+      "RBAC + 8 Roles granulares",
+      "Rate Limiting (Valkey/Redis)",
+      "JWT HttpOnly Cookies",
+      "Idempotência em pagamentos",
+      "Audit Logging completo",
+      "Isolamento multi-tenant"
     ]
   },
   experience: [
@@ -103,15 +119,16 @@ export const portfolioData = {
     { name: "Inglês", level: "Avançado" }
   ],
   differentials: [
-    "Construção de sistema SaaS completo",
+    "Especialidade em segurança e escalabilidade de sistemas SaaS",
+    "Construção de ERP/SaaS Enterprise completo do zero ao deploy",
+    "Arquitetura multi-tenant com isolamento estrito e auditoria",
     "Experiência real com operações administrativas e organizacionais",
-    "Capacidade de estruturar sistemas complexos do zero",
-    "Forte habilidade em resolução de problemas",
-    "Experiência em liderança e gestão de equipe",
-    "Visão de produto aliada à execução técnica"
+    "Capacidade de estruturar sistemas complexos com segurança",
+    "Liderança técnica e resolução de problemas de alta complexidade",
+    "Visão de produto aliada à execução técnica e segurança"
   ],
   contact: {
-    email: "contato@nexusmarket.app.br",
+    email: "davidmota2909@gmail.com",
     github: "https://github.com/Davidm118",
     whatsapp: "https://wa.me/5561992871586"
   }

@@ -9,7 +9,10 @@ import {
   Database,
   Layout,
   Settings,
-  Briefcase,
+  Shield,
+  Zap,
+  Lock,
+  Layers,
   GraduationCap,
   CheckCircle2,
   ChevronRight,
@@ -258,7 +261,7 @@ export default function App() {
                 {portfolioData.title}
               </h2>
               <p className="text-base md:text-lg text-slate-600 mb-10 max-w-lg leading-relaxed">
-                Full Stack com olho de designer e foco em segurança: RBAC, Rate Limit, Auth e sistemas completos.
+                Especialidade em segurança e escalabilidade: RBAC granular, multi-tenant, idempotência e sistemas SaaS completos.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="#nexusmarket" className="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-2xl font-bold transition-all shadow-xl shadow-primary/25 flex items-center gap-2">
@@ -286,12 +289,12 @@ export default function App() {
                 </p>
                 <div className="mt-8 grid grid-cols-2 gap-4 w-full">
                   <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                    <p className="text-2xl font-bold text-primary">3</p>
-                    <p className="text-xs text-slate-500 uppercase font-bold tracking-wider">Anos Exp.</p>
+                    <p className="text-2xl font-bold text-primary">35+</p>
+                    <p className="text-xs text-slate-500 uppercase font-bold tracking-wider">Módulos</p>
                   </div>
                   <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                    <p className="text-2xl font-bold text-primary">1</p>
-                    <p className="text-xs text-slate-500 uppercase font-bold tracking-wider">SaaS Founder</p>
+                    <p className="text-2xl font-bold text-primary">8</p>
+                    <p className="text-xs text-slate-500 uppercase font-bold tracking-wider">RBAC Roles</p>
                   </div>
                 </div>
               </div>
@@ -328,7 +331,14 @@ export default function App() {
         <div className="absolute top-0 right-0 w-1/2 h-full bg-primary/5 blur-3xl rounded-full"></div>
         <div className="section-container relative z-10">
           <div className="mb-16">
-            <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Em Desenvolvimento</span>
+            <div className="flex flex-wrap items-center gap-3 mb-5">
+              <span className="inline-flex items-center gap-2 bg-primary/15 text-primary border border-primary/30 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                v1.1.0
+              </span>
+              <span className="inline-flex items-center gap-2 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                Em Desenvolvimento Ativo
+              </span>
+            </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">{portfolioData.mainProject.title}</h2>
             <p className="text-slate-400 text-xl max-w-2xl leading-relaxed">
               {portfolioData.mainProject.description}
@@ -341,12 +351,11 @@ export default function App() {
                 <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
                   <Layout className="text-primary" size={24} /> Módulos do Sistema
                 </h3>
-                {/* FIX: grid responsivo — 1 col no mobile, 2 no sm+ */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {portfolioData.mainProject.modules.map((module) => (
-                    <div key={module} className="flex items-center gap-3 text-slate-300">
-                      <CheckCircle2 className="text-primary shrink-0" size={18} />
-                      <span className="text-sm">{module}</span>
+                    <div key={module} className="flex items-start gap-3 text-slate-300">
+                      <CheckCircle2 className="text-primary shrink-0 mt-0.5" size={16} />
+                      <span className="text-sm leading-snug">{module}</span>
                     </div>
                   ))}
                 </div>
@@ -370,13 +379,11 @@ export default function App() {
             <div className="flex flex-col justify-between gap-8">
               <div className="card bg-slate-800 border-slate-700 p-8">
                 <h3 className="text-xl font-bold mb-6">Stack Tecnológica</h3>
-                <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-wrap">
-                  {portfolioData.mainProject.stack.map((item, idx) => (
+                <div className="grid grid-cols-3 gap-3">
+                  {portfolioData.mainProject.stack.map((item) => (
                     <span
                       key={item}
-                      className={`flex min-h-11 items-center justify-center rounded-xl bg-slate-700 px-4 py-2 text-center text-sm font-medium text-slate-200 ${
-                        idx === portfolioData.mainProject.stack.length - 1 ? 'col-span-2 sm:col-span-1' : ''
-                      }`}
+                      className="flex min-h-11 items-center justify-center rounded-xl bg-slate-700 px-3 py-2 text-center text-xs font-medium text-slate-200 leading-tight"
                     >
                       {item}
                     </span>
@@ -409,6 +416,40 @@ export default function App() {
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Security & Scalability Highlight */}
+      <section className="py-16 bg-gradient-to-br from-slate-950 via-primary-dark to-slate-900 text-white overflow-hidden relative">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(11,102,255,0.15),transparent_70%)]"></div>
+        <div className="section-container relative z-10">
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            <div className="md:w-1/2">
+              <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider mb-5 border border-white/10">
+                <Shield size={13} /> Especialidade Técnica
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
+                Segurança &amp; Escalabilidade
+              </h2>
+              <p className="text-slate-300 leading-relaxed text-base">
+                Sistemas construídos com isolamento total entre tenants, autenticação robusta, rastreabilidade completa e proteção contra abusos, prontos para crescer sem comprometer a integridade dos dados.
+              </p>
+            </div>
+            <div className="md:w-1/2 grid grid-cols-2 gap-4 w-full">
+              {[
+                { icon: Shield, label: "RBAC Granular", desc: "8 roles com permissões por rota" },
+                { icon: Zap, label: "Rate Limiting", desc: "Valkey/Redis backed, anti-abuso" },
+                { icon: Lock, label: "Auth Segura", desc: "JWT HttpOnly + reCAPTCHA v3" },
+                { icon: Layers, label: "Multi-tenant", desc: "Isolamento estrito por storeId" },
+              ].map(({ icon: Icon, label, desc }) => (
+                <div key={label} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-5 hover:bg-white/10 transition-colors">
+                  <Icon size={22} className="text-white mb-3" />
+                  <p className="font-bold text-sm text-white mb-1">{label}</p>
+                  <p className="text-slate-400 text-xs leading-relaxed">{desc}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -470,11 +511,11 @@ export default function App() {
 
             <div className="card p-6 border-t-4 border-t-primary">
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                <Briefcase className="text-primary" size={24} />
+                <Shield className="text-primary" size={24} />
               </div>
-              <h3 className="font-bold text-lg mb-4">Negócio</h3>
+              <h3 className="font-bold text-lg mb-4">Segurança</h3>
               <ul className="space-y-3">
-                {portfolioData.techStack.business.map(item => (
+                {portfolioData.techStack.security.map(item => (
                   <li key={item} className="text-slate-600 text-sm flex items-center gap-2">
                     <div className="w-1 h-1 bg-slate-300 rounded-full shrink-0"></div> {item}
                   </li>
