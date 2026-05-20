@@ -407,12 +407,20 @@ export default function App() {
                     Solicitar Demo <ExternalLink size={18} />
                   </a>
                   <a
-                    href="/NexusMarket_BrandBook.pdf"
+                    href="https://nexusmarket.app.br"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full py-4 bg-slate-700 hover:bg-slate-600 text-slate-200 rounded-2xl font-bold transition-all flex items-center justify-center gap-2 mt-3"
                   >
-                    Ver Documentação <ExternalLink size={18} />
+                    nexusmarket.app.br <ExternalLink size={18} />
+                  </a>
+                  <a
+                    href="/NexusMarket_BrandBook.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full py-4 bg-slate-700/50 hover:bg-slate-600/50 text-slate-400 rounded-2xl font-medium transition-all flex items-center justify-center gap-2 mt-3 text-sm"
+                  >
+                    Ver Documentação <ExternalLink size={16} />
                   </a>
                 </div>
               </div>
